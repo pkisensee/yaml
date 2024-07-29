@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "yaml", "yaml.vcxproj", "{870179B1-71CE-4FE5-852E-2F251DAF23D9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{39A9CB6F-6F44-4205-A01B-555DB992A76E} = {39A9CB6F-6F44-4205-A01B-555DB992A76E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Util", "..\Util\Util.vcxproj", "{39A9CB6F-6F44-4205-A01B-555DB992A76E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,14 @@ Global
 		{870179B1-71CE-4FE5-852E-2F251DAF23D9}.Release|x64.Build.0 = Release|x64
 		{870179B1-71CE-4FE5-852E-2F251DAF23D9}.Release|x86.ActiveCfg = Release|Win32
 		{870179B1-71CE-4FE5-852E-2F251DAF23D9}.Release|x86.Build.0 = Release|Win32
+		{39A9CB6F-6F44-4205-A01B-555DB992A76E}.Debug|x64.ActiveCfg = Debug|x64
+		{39A9CB6F-6F44-4205-A01B-555DB992A76E}.Debug|x64.Build.0 = Debug|x64
+		{39A9CB6F-6F44-4205-A01B-555DB992A76E}.Debug|x86.ActiveCfg = Debug|Win32
+		{39A9CB6F-6F44-4205-A01B-555DB992A76E}.Debug|x86.Build.0 = Debug|Win32
+		{39A9CB6F-6F44-4205-A01B-555DB992A76E}.Release|x64.ActiveCfg = Release|x64
+		{39A9CB6F-6F44-4205-A01B-555DB992A76E}.Release|x64.Build.0 = Release|x64
+		{39A9CB6F-6F44-4205-A01B-555DB992A76E}.Release|x86.ActiveCfg = Release|Win32
+		{39A9CB6F-6F44-4205-A01B-555DB992A76E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
