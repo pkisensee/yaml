@@ -64,8 +64,8 @@ Yaml::Special Yaml::GetSpecialChars( std::string_view scalar )
 
   // If already quoted, ignore
   if( ( scalar.size() > 2 ) &&
-    ( scalar.front() == '\'' || scalar.front() == '\"' ) &&
-    ( scalar.front() == scalar.back() ) )
+      ( scalar.front() == '\'' || scalar.front() == '\"' ) &&
+      ( scalar.front() == scalar.back() ) )
     return Yaml::Special(false);
 
   // Build ASCII index table from scalar. Once the string is scanned, the table
