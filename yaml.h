@@ -68,30 +68,30 @@ private:
   public:
     void push( Indent indent )
     {
-      assert( mSize < kMaxStackSize - 1 );
-      mStack[ mSize++ ] = indent;
+      assert( size_ < kMaxStackSize - 1 );
+      stack_[ size_++ ] = indent;
     }
     void pop()
     {
-      assert( mSize != 0 );
-      --mSize;
+      assert( size_ != 0 );
+      --size_;
     }
     Indent top() const
     {
-      assert( mSize != 0 );
-      return mStack[ mSize - 1 ];
+      assert( size_ != 0 );
+      return stack_[ size_ - 1 ];
     }
     bool empty() const
     {
-      return mSize == 0;
+      return size_ == 0;
     }
     size_t size() const
     {
-      return mSize;
+      return size_;
     }  
   private:
-    std::array<Indent, kMaxStackSize> mStack;
-    size_t mSize = 0u;
+    std::array<Indent, kMaxStackSize> stack_;
+    size_t size_ = 0u;
   };
 
   bool Error( std::string_view ) const;
