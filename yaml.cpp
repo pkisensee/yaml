@@ -388,7 +388,7 @@ bool YamlParser::IsNormalChar() const
   case ',':
     if( !CharIsIn( PeekNext(), kIsWhite ) )
       return true;
-    // fall through
+    [[fallthrough]];
   default:
     return false;
   }
