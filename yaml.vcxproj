@@ -24,11 +24,6 @@
   <ItemGroup>
     <ClInclude Include="yaml.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Util\Util.vcxproj">
-      <Project>{39a9cb6f-6f44-4205-a01b-555db992a76e}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
